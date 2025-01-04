@@ -1,0 +1,86 @@
+1. package main
+
+import (
+    "fmt"
+)
+
+func main() {
+    for i := 1; i <= 10; i++ {
+        fmt.Print(i, " ")
+    }
+    fmt.Println()
+}
+
+*********************************************************************************************************
+2. Raise 2 to power of 11
+ package main
+
+import (
+    "fmt"
+	"math"
+)
+
+func main() {
+   res := math.Pow(2, 11)
+    fmt.Println(res)
+}
+
+*******************************************************************************************************
+3.Print current date in ANSIC format.
+ package main
+
+import (
+	"fmt"
+	"time"
+)
+
+func main() {
+	dt := time.Now()
+
+	fmt.Println("The current date is :", dt.Format(time.ANSIC))
+}
+
+*******************************************************************************************************
+. module2
+package main
+
+import (
+	"fmt"
+	"math/big"
+)
+
+func main() {
+	var num int16 = 10
+	var num1 int32 = -100
+	var num2 int16 = 128
+	var num3 int8 = 127
+	var num4 int32 = -144243
+	var num5 int16 = 255
+	var num6 int16 = 256
+	var num7 int32 = 144243
+	var num8 uint64 = 10000000000000000000
+	var num9 = big.NewInt(0)
+	num9.SetString("-10000000000000000000", 10)
+
+	fmt.Println(num, num1, num2, num3, num4, num5, num6, num7, num8, num9)
+}
+
+********************************************************************************************************
+
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	var str1 string = "The gopher is amazing"
+	var str2 string = "g"
+	var str3 string = "o"
+	var str4 string = "i"
+	var str5 string = "s"
+	var str6 string = "great"
+	var str7 string = "!"
+
+	fmt.Println(str1, str2, str3, str4, str5, str6,str7)
+}
